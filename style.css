@@ -7,7 +7,13 @@
     margin: 0;
     padding: 0;
 }
-
+:root {
+    /* light theme */
+    --textColor: black;
+    --buttonBGColor:  #717171;
+    --buttonTextColor: #fff;
+    --buttonStyleColor: lightblue;
+}
 #bg{
     display: flex;
     flex-direction: column;
@@ -19,7 +25,7 @@
     min-height: 100vh;
     position: absolute;
 
-    background-image: url("assets/B_forrest.jpg");
+    background-image: none;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,6 +34,7 @@
 
 
 #heading{
+    color: var(--textColor);
     min-width: 10rem;
     margin: auto;
     margin-top: 0;
@@ -55,8 +62,8 @@
 
 #BtnProjects{
     border: none;
-    background-color: #717171;
-    color: #fff;
+    background-color: var(--buttonBGColor);
+    color: var(--buttonTextColor);
 
     margin-top: 3rem;
     border-radius: 2rem;
@@ -68,8 +75,8 @@
 
 #BtnProjects:hover{
     /* color: red; */
-    box-shadow: 0.2em 0.2em 4px lightblue,
-    -0.2em -0.2em 4px lightblue,
-    -0.2em 0.2em 4px lightblue,
-    0.2em -0.2em 4px lightblue;
+    box-shadow: 0.1em 0.1em 6px var(--buttonStyleColor),
+    -0.1em -0.1em 6px var(--buttonStyleColor),
+    -0.1em 0.1em 6px var(--buttonStyleColor),
+    0.1em -0.1em 6px var(--buttonStyleColor);
 }
