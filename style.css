@@ -14,7 +14,12 @@
     --buttonTextColor: #fff;
     --buttonStyleColor: lightblue;
 }
-#bg{
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.bg{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -37,11 +42,15 @@
     width: 100vw;
     color: var(--textColor);
     margin: auto;
-    margin-top: 0;
+    margin-top: 50em;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    animation: goUp 8s 1s;
+    animation-fill-mode: forwards;
+
 }
 
 #heading > *{
@@ -50,9 +59,21 @@
     display: flex;
 }
 
-#title{
+.title{
     font-family: 'Comfortaa', cursive;
     font-size: 5rem;
+    opacity: 0;
+}
+
+#tyway1{
+    animation: fadeIn 4s 1s;
+    animation-fill-mode: forwards;
+
+}
+
+#tyway2{
+    animation: fadeIn 4s 2s;
+    animation-fill-mode: forwards;
 }
 
 #subHeading{
@@ -60,6 +81,9 @@
     font-size: 3rem;
     text-decoration: underline;
     margin-top: 20vh;
+    opacity: 0;
+    animation: fadeIn 4s 3s;
+    animation-fill-mode: forwards;
 }
 
 #titleDiv{
@@ -67,4 +91,22 @@
     justify-content: center;
     flex-direction:column;
     align-items: center;
+}
+
+/* animations */
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes goUp {
+    100%{
+        margin-top: 0;
+    }
 }

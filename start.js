@@ -14,7 +14,7 @@ function lightTheme(){
 }
 
 function selectBGtheme(){
-    const bg = document.querySelector("#bg");
+    const bg = document.querySelector(".bg");
     const imgs = ["B_forrest.jpg", "B_mountain.jpg", "D_city.jpg", "D_city2.jpg"];
     const img = imgs[Math.floor(Math.random() * imgs.length)];
     bg.style.backgroundImage = `url("assets/${img}")`;
