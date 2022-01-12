@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+body {
+    background-color: black;
+    padding: 0px;
+}
+#head {
+    top: 0px;
+    position:sticky ;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+}
+p {
+    color: green;
+    font-family: 'share tech Mono', monospace;
+    font-size: small;
+}
+#menu {
+    width: 100%;
+    border-collapse: collapse ;
+    position: relative;
+    top: 0px;
+    left:0px;
+    height: 3%;
+}
+th {
+    width: 33.3%;
+}
+
+#link {
+    width: 100%;
+    padding: 0%;
+    background-color: black;
+    border: 0px;
+}
+#linktext {
+    font-size: 150%;
+    transition: font-size 1s;
+}
+#linktext:hover{
+    text-decoration: underline;
+    text-decoration-color: green;
+    font-size: 175%;
+}
+a{
+    text-decoration: none;
+}
+#logo {
+    position: relative;
+    left:0px;
+    max-width: 100%;
+    min-width: 50%;
+}
+#backgroundimg1 {
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 1;
+    display: inline-block;
+}
+#backgroundimg2 {
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    display: inline-block;
+}
+#bannerimg {
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    height: 35%;
+    background-size: cover;
+    opacity: 1;
+    display: inline-block;
+}
+#carousel {
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    display: inline-block;
+}
+#Lbackground {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    display: inline-block;
+    left: 0px;
+}
+#Rbackground {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    display: inline-block;
+    left: 50%;
+    top: 0px;
+}
+h2 {
+    font-family: 'share tech Mono', monospace;
+    color:  green;
+    font-size: 400%;
+}
+h1{
+    font-family: 'share tech Mono', monospace;
+    color: green;
+    margin-bottom: 0px;
+    font-size: 500%;
+
+    
+}
+#left{
+    position: relative;
+    top: 25%;
+    width: 50%;
+    max-width: 100%;
+    min-width: 50%;
+    left: 5%;
+    font-size: auto;
+    overflow: hidden;
+}
+#right{
+    position: relative;
+    width: 45%;
+    left: 55%;
+    margin: 0px;
+    overflow: scroll;
+    max-height: 100%;
+    display: inline-block;
+    top: 2%;
+}
+#ImgText{
+    font-size: 250%;
+    color: green;
+}
+#video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#pop {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    position: relative;
+}
+#pop:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#Cimg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#TitleBox {
+    position: absolute;
+    top: 25%;
+    border-style: solid ;
+    border-color: white;
+    border-width: 10px;
+    text-align: center;
+    background-color: black;
+    width: 60%;
+    left: 20%;
+}
+#TitleText{
+    margin-top: 0px;
+    text-decoration: underline;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+}
+#con1{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.collapsible {
+    position: absolute;
+    width: 48%;
+    margin: 1%;
+    margin-left: 0.5%;
+    margin-bottom: 0px;
+    outline: none;
+    padding: 0px;
+    cursor: pointer;
+    height: 10%;
+    text-align: left;
+    font-family: 'share tech Mono', monospace;
+    background-color: slategray;
+    border-style: none;
+    font-size: 200%;
+}
+.content {
+    position: absolute;
+    width:48%;
+    left: 50%;
+    display: block;
+    text-align: center;
+    font-size: 250%;
+    margin: 1px;
+    top: 10%;
+    margin-top: 0%;
+    z-index: 100;
+    transition: display 1s ease-out;
+}
+#Ctext {
+    font-size: 90%;
+}
+.active, .collapsible:hover {
+    background-color: #ccc;
+  }
+#textBox{
+    position: absolute;
+    width: 49%;
+    left: 51%;
+    top: 0%;
+}
+#con {
+    position: relative;
+}
+#LT{
+    font-size: 150%;
+}
+#PBtn {
+    max-width: 100%;
+    min-width: 25%;
+    width: 100%;
+    position: relative;
+    height: 20%;
+    font-family: 'share tech Mono', monospace;
+    color: green;
+    font-size: 300%;
+    border-width: 20%;
+    background-size: cover;
+    transition: height 1s ease-out;
+    height: 25%;
+    background-repeat: no-repeat;
+    
+}
+#PBtn:hover {
+    height: 40%;
+}
+#BtnT {
+    position: relative;
+    background-color: rgba(255, 255, 255, .8);
+    left: 20%;
+    min-width: 40%;
+    max-width:60%;
+    width: auto;
+}

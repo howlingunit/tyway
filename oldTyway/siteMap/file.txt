@@ -1,0 +1,88 @@
+Folder PATH listing
+Volume serial number is 00000069 F462:4DF0
+C:.
+ÃÄÄÄaspnet_client
+³   ÀÄÄÄsystem_web
+³       ÀÄÄÄ4_0_30319
+ÃÄÄÄdownloadScp
+ÃÄÄÄlearn JS
+³   ÃÄÄÄJStesting
+³   ÀÄÄÄlight
+ÃÄÄÄotherStuff
+³   ÃÄÄÄBlog
+³   ³   ÃÄÄÄassets
+³   ³   ÀÄÄÄtemps
+³   ÃÄÄÄdexPage
+³   ÃÄÄÄfinancing
+³   ÃÄÄÄgames
+³   ³   ÃÄÄÄbens game
+³   ³   ³   ÃÄÄÄimages
+³   ³   ³   ÀÄÄÄmedia
+³   ³   ÃÄÄÄbrettsGame
+³   ³   ³   ÃÄÄÄimages
+³   ³   ³   ÀÄÄÄmedia
+³   ³   ÃÄÄÄmygame
+³   ³   ³   ÃÄÄÄimages
+³   ³   ³   ÀÄÄÄmedia
+³   ³   ÃÄÄÄsnake
+³   ³   ³   ÃÄÄÄcss
+³   ³   ³   ³   ÀÄÄÄimages
+³   ³   ³   ÀÄÄÄjs
+³   ³   ÀÄÄÄtetris
+³   ³       ÃÄÄÄscreenshots
+³   ³       ÀÄÄÄsrc
+³   ÃÄÄÄkeyframes
+³   ÀÄÄÄlernhtml
+ÃÄÄÄprojects
+³   ÃÄÄÄhtml
+³   ³   ÃÄÄÄnewzealand
+³   ³   ÀÄÄÄtyway-1
+³   ³       ÀÄÄÄassests
+³   ÃÄÄÄpython
+³   ³   ÃÄÄÄdiscounts
+³   ³   ÃÄÄÄloops
+³   ³   ÀÄÄÄuni
+³   ÀÄÄÄvb
+³       ÃÄÄÄcalc
+³       ÃÄÄÄhelloworld
+³       ÃÄÄÄloops
+³       ³   ÀÄÄÄloops
+³       ³       ÃÄÄÄ.vs
+³       ³       ³   ÀÄÄÄloops
+³       ³       ³       ÀÄÄÄv14
+³       ³       ÀÄÄÄloops
+³       ³           ÃÄÄÄbin
+³       ³           ³   ÀÄÄÄDebug
+³       ³           ÃÄÄÄMy Project
+³       ³           ÀÄÄÄobj
+³       ³               ÀÄÄÄDebug
+³       ³                   ÀÄÄÄTempPE
+³       ÃÄÄÄnetworkStatus
+³       ÃÄÄÄpassword
+³       ³   ÃÄÄÄ.vs
+³       ³   ³   ÀÄÄÄpassword
+³       ³   ³       ÀÄÄÄv14
+³       ³   ÀÄÄÄpassword
+³       ³       ÃÄÄÄbin
+³       ³       ³   ÀÄÄÄDebug
+³       ³       ÃÄÄÄMy Project
+³       ³       ÀÄÄÄobj
+³       ³           ÀÄÄÄDebug
+³       ³               ÀÄÄÄTempPE
+³       ÀÄÄÄsnowBoard
+³           ÃÄÄÄ.vs
+³           ³   ÀÄÄÄsnowBoard
+³           ³       ÀÄÄÄv14
+³           ÀÄÄÄsnowBoard
+³               ÃÄÄÄbin
+³               ³   ÀÄÄÄDebug
+³               ÃÄÄÄMy Project
+³               ÀÄÄÄobj
+³                   ÀÄÄÄDebug
+³                       ÀÄÄÄTempPE
+ÃÄÄÄsiteMap
+ÀÄÄÄwebTests
+    ÃÄÄÄdownloadtest
+    ³   ÀÄÄÄfile
+    ÃÄÄÄkeyframes
+    ÀÄÄÄvidtest

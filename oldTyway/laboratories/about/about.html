@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>about</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div id="head">
+            <div style="position: relitive;">
+                <table id="menu">
+                    <tr>
+                        <th><a href="about.html"><div id="link"><p id="LinkText">About</p></div></a></th>
+                        <th><a href="../projects/ProjectsIndex.html"><div id="link"><p id="LinkText">Projects</p></div></a></th>
+                        <th><a href="../location/location.html"><div id="link"><p id="LinkText">Location</p></div></a></th>
+                    </tr>
+                </table>
+            </div>
+            <a href="../Laboratories.html"><img id="Logo" src="AboutAssets\tywayLabLogoH.png"></a>
+            <div id="bannerimg" style="background-image: url('AboutAssets/LabDanBanner.jpg');">
+            <div id="titleBox"><h1 id="TitleText">About</h1></div>
+            </div>
+        <div id="con">
+            <div id="con1">
+            <div id="Lbackground" style="background-image: url('AboutAssets/breakDan.jpg');"></div>
+            <button class="collapsible" type="button">About us</button>
+            <div class="content">
+                <p id="Ctext">Since 2020 Tyway has provided top quality research in the world most advanced sciences, we are dedicated to finding the secrets of nature and using what we find to push the human race further. We have dedicated employees that are pushed to the limits to find the unknown!</p>
+            </div>
+        </div>
+        <div id="con1">
+            <div id="Rbackground" style="background-image: url('AboutAssets/classroom1.png'); height: 62%;"></div>
+            <button class="collapsible" type="button" style="left: 0%;">Our mission</button>
+            <div class="content" style="left: 0%;"><p id="Ctext"> Our mission is to improve lives by creating amazing technology. Weather that be medical equipment or household items we cover all bases. We do this by going were no man has gone before, we search in space and in the deepest depths of the ocean, we have found medicine in the darkest jungles and found wonders in the furthest reaches of space. We launch satellites that provide life saving data on the climate, we launch deep sea probs that help us save the most endangered animals. This is what tyway labs does </p></div> 
+        </div>   
+        </div>
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+        </script>
+    </body>
+</html>

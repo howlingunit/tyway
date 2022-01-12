@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Green Goo</title>
+        <link rel="stylesheet" href="../../style.css">
+    </head>
+    <body onload="carouselImg1()">
+        <div id="head">
+            <div style="position: relitive;">
+                <table id="menu">
+                    <tr>
+                        <th><a href="../../about/about.html"><div id="link"><p id="LinkText">About</p></div></a></th>
+                        <th><a href="../ProjectsIndex.html"><div id="link"><p id="LinkText">Projects</p></div></a></th>
+                        <th><a href="../../location/location.html"><div id="link"><p id="LinkText">Location</p></div></a></th>
+                    </tr>
+                </table>
+            </div>
+            <a href="../../Laboratories.html"><img id="Logo" src="GreenAssets/TywayLabLogoH.png"></a>
+        </div>
+        <div id="con">
+            <div id="carousel" style="width: 100%;">
+                <img src="GreenAssets/greenGoo1.png" id="Cimg" style="width: 100%;">
+                <div id="TitleBox"><h1 id="TitleText">Offerre viridi</h1></div>
+            </div>
+        </div>
+        <div id="backgroundimg1" style="background-image: url('GreenAssets/outsideGreenGoo1.png');">
+        <div id="right">
+            <div id="pop">
+                <h2>What is it</h2>
+                <p id="ImgText">This is a green substance with a relatively high viscosity. It’s interesting because it has bacteria in it that erodes long chain polymers (plastics) incredibly efficiently with the by produced being hydrogen gas, and it uses the carbon as food and this bacterium it harmless to all other life forms we tested on. The scientific name for it is “Offerre viridi”. </p>
+                <p id="ImgText">This implications for this are incredible as we could put this bacterium on plastics, and it will dissolve the plastics in an ecological way. we could also harvest the hydrogen for other industrial products</p>
+            </div>
+        </div>
+        </div>
+        <script>
+             function carouselImg1() {
+                document.getElementById('Cimg').src="GreenAssets/greenGoo1.png";
+                setTimeout(Fimg2, 8000);
+            }
+            function Fimg2(){
+                document.getElementById('Cimg').src='GreenAssets/greenGoo2.jpg';
+                setTimeout(Fimg3, 8000);
+            }
+            function Fimg3(){
+                document.getElementById('Cimg').src='GreenAssets/LabDan.jpg';
+                setTimeout(carouselImg1, 8000);
+            }
+        </script>
+    </body>
+</html>

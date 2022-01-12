@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>tyway laboratories</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function carouselImg1() {
+                document.getElementById('Cimg').src="IndexAssets/LabDan.jpg";
+                setTimeout(Fimg2, 10000);
+            }
+            function Fimg2(){
+                document.getElementById('Cimg').src='IndexAssets/greenGoo1.png';
+                setTimeout(Fimg3, 10000);
+            }
+            function Fimg3(){
+                document.getElementById('Cimg').src='IndexAssets/solderDan.jpg';
+                setTimeout(carouselImg1, 10000);
+            }
+        </script>
+    </head>
+    <body onload="carouselImg1()">
+        <div id="head">
+            <div style="position: relitive;">
+                <table id="menu">
+                    <tr>
+                        <th><a href="about\about.html"><div id="link"><p id="LinkText">About</p></div></a></th>
+                        <th><a href="projects\projectsIndex.html"><div id="link"><p id="LinkText">Projects</p></div></a></th>
+                        <th><a href="location\location.html"><div id="link"><p id="LinkText">Location</p></div></a></th>
+                    </tr>
+                </table>
+            </div>
+            <a href="LABORATORIES.html"><img id="Logo" src="IndexAssets\tywayLabLogoH.png"></a>
+        </div>
+    <div id="carousel">
+        <img src="IndexAssets/solderDan.jpg" id="Cimg">
+    </div>
+    <div id="backgroundimg1" style="background-image: url('IndexAssets/DevDan.jpg');">
+        <div id="left">
+            <DIV id="pop">
+                <h2>Our mission</h2>
+                <p id="ImgText">Our mission is to improve lives by creating amazing technology. Weather that be medical equipment or household items we cover all bases </p>
+            </DIV>
+        </div>
+    </div>
+    <div id="backgroundimg2" style="background-image: url('IndexAssets/hallway1.png');">
+        <div id="left">
+        <div id="pop">
+            <h2>Real science</h2>
+            <p id="ImgText">Here at Tyway laboratories we’re interested in real science, cutting edge stuff that has a real impact on the world. </p>
+        </div>
+        </div>
+    </div>
+    <video id="video" controls>
+        <source src="IndexAssets/ad1.mp4" type="video/mp4">
+        Your browser does not support html video
+    </video>
+    </body>
+</html>

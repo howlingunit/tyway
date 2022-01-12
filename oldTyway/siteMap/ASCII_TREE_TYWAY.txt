@@ -1,0 +1,36 @@
+TYWAY 18/12/2019
+|
++---otherStuff
+|   +---dexPage
+|   +---financing
+|   +---games
+|   |   +---Gfighter
+|   |   +---HamsterHavoc
+|   |   \---PacInvader
+|   +---keyframes
+|   +---lernhtml
+|   \---uselessPage
++---projects
+|   +---downloadScp
+|   +---html
+|   |   +---newzealand
+|   |   \---tyway-1
+|   +---learnJS
+|   |   +---add
+|   |   +---JStesting
+|   |   \---light
+|   +---python
+|   |   +---discounts
+|   |   +---loops
+|   |   +---portScanner
+|   |   \---uni
+|   \---vb
+|       +---calc
+|       +---helloworld
+|       +---loops
+|       +---networkStatus
++---webTests
+|   +---downloadtest
+|   +---keyframes
+|   \---vidtest
+\---siteMap

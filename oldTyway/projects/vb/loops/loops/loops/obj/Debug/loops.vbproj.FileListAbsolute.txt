@@ -1,0 +1,11 @@
+O:\unit6 14\loops\loops\bin\Debug\loops.exe.config
+O:\unit6 14\loops\loops\bin\Debug\loops.exe
+O:\unit6 14\loops\loops\bin\Debug\loops.pdb
+O:\unit6 14\loops\loops\bin\Debug\loops.xml
+O:\unit6 14\loops\loops\obj\Debug\loops.vbprojResolveAssemblyReference.cache
+O:\unit6 14\loops\loops\obj\Debug\loops.Form1.resources
+O:\unit6 14\loops\loops\obj\Debug\loops.Resources.resources
+O:\unit6 14\loops\loops\obj\Debug\loops.vbproj.GenerateResource.Cache
+O:\unit6 14\loops\loops\obj\Debug\loops.exe
+O:\unit6 14\loops\loops\obj\Debug\loops.xml
+O:\unit6 14\loops\loops\obj\Debug\loops.pdb

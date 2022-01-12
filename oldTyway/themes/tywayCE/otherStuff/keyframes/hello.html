@@ -1,0 +1,40 @@
+<html>
+<title>
+hello
+</title>
+<head>
+<style>
+#back {
+position: fixed;
+height: 50px;
+width: 130px;
+left: 1px;
+bottom: 1px;
+}
+#imgi {
+	position: relative;
+	animation: hello 5s infinite;
+	animation-delay: -2s;
+}
+
+@keyframes hello {
+	0% {left: 0px;}
+	25% {transform: rotate(720deg);}
+	50% {left: 100%;}
+	100% {left: 0px;}
+}
+body {
+	background: white;
+}
+
+</style>
+</head>
+<body>
+<script>
+
+</script>
+<p id="h"></p>
+<img id="imgi" src="menu.png" alt="menu">
+<a href="../osindex.html"><button id="back">back</button></a>
+</body>
+</html>
