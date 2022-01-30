@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
 /* blank slate */
 *{
@@ -58,6 +59,7 @@
 }
 
 #heading > *{
+    margin-top: 3rem;
     position: relative;
     margin: auto;
     display: flex;
@@ -105,6 +107,32 @@
     height: 100vh;
 }
 
+footer{
+    justify-content: center;
+    margin-top: auto;
+
+    opacity: 0;
+    animation: fadeIn 3s 6s, bounce 5s 10s, bounce 5s 13s infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+#scrollDown{
+    /* color: var(--textColor); */
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 40rem;
+    margin: auto; */
+}
+
+.arrow{
+    font-family: 'Monoton', cursive;
+}
+
 /* animations */
 
 @keyframes fadeIn {
@@ -119,6 +147,18 @@
 
 @keyframes goUp {
     100%{
-        margin-top: 0;
+        margin-top: 2rem;
+    }
+}
+
+@keyframes bounce {
+    25%{
+        padding-bottom: 0;
+    }
+    50%{
+        padding-bottom: 1rem;
+    }
+    75%{
+        padding-bottom: 0;
     }
 }
