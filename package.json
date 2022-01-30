@@ -1,0 +1,23 @@
+{
+  "name": "tyway",
+  "version": "1.0.0",
+  "description": "The tyway site",
+  "type": "module",
+  "main": "srv.js",
+  "scripts": {
+    "test": "node svr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howlingunit/tyway.git"
+  },
+  "author": "Tyler Pitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howlingunit/tyway/issues"
+  },
+  "homepage": "https://github.com/howlingunit/tyway#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
