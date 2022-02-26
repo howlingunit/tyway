@@ -1,10 +1,11 @@
-import express from "express";
+// import express from "express";
+const express = require("express");
 
 const app = express();
 var myLogger = function (req, res, next) {
 
     const { url, path: routePath }  = req ;
-    console.log( 'my LOGGER - IP ('+ req.socket.remoteAddress+') URL (' + url + '), PATH (' + routePath + ').' ) ;
+    console.log( 'LOGGER - IP ('+ req.socket.remoteAddress+') URL (' + url + '), PATH (' + routePath + ').' ) ;
 
     next() ;
 }
