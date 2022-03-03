@@ -1,5 +1,4 @@
-// import express from "express";
-const express = require("express");
+import express from "express";
 
 const app = express();
 const myLogger = function (req, res, next) {
@@ -15,4 +14,4 @@ app.use(myLogger) ;
   
 app.use(express.static("static"));
 
-app.listen(8080);
+app.listen(8081);
