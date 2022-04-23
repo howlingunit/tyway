@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The tyway site",
   "type": "module",
-  "main": "srv.js",
+  "main": "svr.js",
   "scripts": {
     "start": "node .",
     "test": "node svr.js"
