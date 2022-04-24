@@ -7,7 +7,7 @@
     font-weight: normal;
     margin: 0;
     padding: 0;
-    color: #fff;
+    /* color: #fff; */
 }
 :root {
     /* light theme */
@@ -82,18 +82,22 @@
     animation-fill-mode: forwards;
 }
 
-#subHeading{
+h2{
     letter-spacing: 0.2rem;
     font-family: 'Comfortaa', cursive;
     font-size: 3rem;
     text-decoration: underline;
-    margin-top: 20vh;
     opacity: 0;
     animation: fadeIn 5s 3s;
     animation-fill-mode: forwards;
+    text-align: center;
 }
 
-#titleDiv{
+#subHeading1{
+    margin-top: 5rem;
+}
+
+.titleDiv{
     justify-content: center;
     flex-direction:column;
     align-items: center;
@@ -103,6 +107,10 @@
     margin-top: 100vh;
     width: 100vw;
     height: 100vh;
+}
+
+a{
+    color: var(--textColor);
 }
 
 footer{
