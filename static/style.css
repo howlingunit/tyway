@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+/* blank slate */
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* light theme */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    --textColor: black;
+    --buttonBGColor:  #717171;
+    --buttonTextColor: #fff;
+    --buttonStyleColor: lightblue;
+
+    --navJustifyContent: flex-start;
+}
+
+::-webkit-scrollbar {
+    display: none; 
+}
+
+@media (max-width: 600px) {
+    :root{
+        --navJustifyContent: space-around;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+#heading{
+    width: 100vw;
+    color: var(--textColor);
+    margin: auto;
+    margin-top: 50em;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    animation: goUp 8s;
+    animation-fill-mode: forwards;
+
+}
+
+#heading > *{
+    margin-top: 3rem;
+    position: relative;
+    margin: auto;
+    display: flex;
+}
+
+nav{
+    padding: 0;
+    width: 100vw;
+    height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: var(--navJustifyContent);
+}
+
+.linkBtn{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 1rem 0.5rem 1rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.2rem;
+    transition: 1s;
+}
+.linkBtn:hover{
+    cursor: pointer;
+    background-color: #a3a3a3;
+}
+
+.linkText{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--textColor);
+    text-decoration: underline;
+    font-family: 'Comfortaa', cursive;
+}
+
+.title{
+    letter-spacing: 0.5rem;
+    font-family: 'Comfortaa', cursive;
+    font-size: 5rem;
+    opacity: 0;
+}
+
+#tyway1{
+    animation: fadeIn 5s 1s;
+    animation-fill-mode: forwards;
+
+}
+
+#tyway2{
+    animation: fadeIn 5s 2s;
+    animation-fill-mode: forwards;
+}
+
+h2{
+    letter-spacing: 0.2rem;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3rem;
+    text-decoration: underline;
+    opacity: 0;
+    animation: fadeIn 5s 3s;
+    animation-fill-mode: forwards;
+    text-align: center;
+}
+
+#subHeading1{
+    margin-top: 5rem;
+}
+
+.titleDiv{
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+
+#oldSiteFrame{
+    margin-top: 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+a{
+    color: var(--textColor);
+}
+
+footer{
+    justify-content: center;
+    margin-top: auto;
+
+    opacity: 0;
+    animation: fadeIn 3s 6s, bounce 5s 10s, bounce 5s 13s infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+#scrollDown{
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow{
+    font-family: 'Monoton', cursive;
+}
+
+/* animations */
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes goUp {
+    100%{
+        margin-top: 2rem;
+    }
+}
+
+@keyframes bounce {
+    25%{
+        padding-bottom: 0;
+    }
+    50%{
+        padding-bottom: 1rem;
+    }
+    75%{
+        padding-bottom: 0;
+    }
+}
