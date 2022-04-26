@@ -25,4 +25,20 @@ function selectBGtheme(){
 
     }
 }
-window.addEventListener("load", selectBGtheme);
+
+function setUpNav(){
+    const burgerButton = document.querySelector('.burger-button');
+    burgerButton.addEventListener('click', () => {
+        const optionsMenu = document.querySelector('.nav-options');
+        if(optionsMenu.classList.contains('open')){
+            optionsMenu.classList.add('close');
+            optionsMenu.classList.remove('open');
+        } else {
+            optionsMenu.classList.add('open');
+            optionsMenu.classList.remove('close');
+        }
+    })
+}
+
+selectBGtheme();
+setUpNav();

@@ -17,7 +17,9 @@
     --buttonTextColor: #fff;
     --buttonStyleColor: lightblue;
 
-    --navJustifyContent: flex-start;
+    --nav-small: none;
+    --nav-big: flex;
+
 }
 
 ::-webkit-scrollbar {
@@ -26,10 +28,78 @@
 
 @media (max-width: 600px) {
     :root{
-        --navJustifyContent: space-around;
+        --nav-small: flex;
+        --nav-big: none;
     }
 }
 
+nav{
+    padding: 0;
+    width: 100vw;
+    height: 3rem;
+}
+
+.nav-big {
+    display: var(--nav-big);
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.nav-small {
+    display: var(--nav-small);
+    flex-direction: column;
+}
+
+.linkBtn{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 1rem 0.5rem 1rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.2rem;
+    transition: 1s;
+}
+.linkBtn:hover{
+    cursor: pointer;
+    background-color: #a3a3a3;
+}
+.nav-small>.nav-options>a>.linkBtn {
+    width: 100%;
+    border-top:0.1rem solid black;
+    margin-top: 1rem;
+}
+
+.linkText{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--textColor);
+    text-decoration: underline;
+    font-family: 'Comfortaa', cursive;
+}
+
+.burger-button {
+    width: 3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.nav-options {
+    z-index: 1;
+    position: absolute;
+    padding: 3rem 0rem 0 0;
+    width: 13rem;
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+}
+.open {
+    left: 0;
+}
+.close {
+    left: -13rem;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -72,37 +142,6 @@
     position: relative;
     margin: auto;
     display: flex;
-}
-
-nav{
-    padding: 0;
-    width: 100vw;
-    height: 3rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: var(--navJustifyContent);
-}
-
-.linkBtn{
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0 1rem 0.5rem 1rem;
-    height: 2.5rem;
-    border: 0;
-    border-radius: 0.2rem;
-    transition: 1s;
-}
-.linkBtn:hover{
-    cursor: pointer;
-    background-color: #a3a3a3;
-}
-
-.linkText{
-    font-weight: bold;
-    font-size: 2rem;
-    color: var(--textColor);
-    text-decoration: underline;
-    font-family: 'Comfortaa', cursive;
 }
 
 .title{
