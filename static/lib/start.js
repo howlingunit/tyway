@@ -26,16 +26,25 @@ function selectBGtheme(){
 
 function setUpNav(){
     const burgerButton = document.querySelector('.burger-button');
-    burgerButton.addEventListener('click', () => {
-        const optionsMenu = document.querySelector('.nav-options');
-        if(optionsMenu.classList.contains('open')){
-            optionsMenu.classList.add('close');
-            optionsMenu.classList.remove('open');
-        } else {
-            optionsMenu.classList.add('open');
-            optionsMenu.classList.remove('close');
-        }
-    })
+    const navExit = document.querySelector('.nav-exit');
+    burgerButton.addEventListener('click', toggleNav);
+    navExit.addEventListener('click', toggleNav);
+    
+}
+
+async function toggleNav() {
+    const optionsMenu = document.querySelector('.nav-options');
+    const navExit = document.querySelector('.nav-exit');
+
+    if(optionsMenu.classList.contains('open')){ // close
+        optionsMenu.classList.add('close');
+        optionsMenu.classList.remove('open');
+        navExit.classList.add('invis');
+    } else {                                    // open
+        optionsMenu.classList.add('open');
+        optionsMenu.classList.remove('close');
+        navExit.classList.remove('invis');
+    }
 }
 
 selectBGtheme();
