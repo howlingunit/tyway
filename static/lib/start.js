@@ -1,16 +1,14 @@
 function darkTheme(){
     const root = document.documentElement;
     root.style.setProperty("--textColor", "#fff");
-    root.style.setProperty("--buttonBGColor", "#D3D3D3");
-    root.style.setProperty("--buttonTextColor", "#000");
-    root.style.setProperty("--buttonStyleColor", "blue");
+    root.style.setProperty("--nav-bar-colour", "#818181")
 }
 
 function lightTheme(){
     const root = document.documentElement;
     root.style.setProperty("--textColor", "black");
-    root.style.setProperty("--buttonBGColor", "#717171");
-    root.style.setProperty("--buttonTextColor", "#fff");
+    root.style.setProperty("--nav-bar-colour", "#d1d1d1")
+
 }
 
 function selectBGtheme(){

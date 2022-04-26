@@ -13,9 +13,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     --textColor: black;
-    --buttonBGColor:  #717171;
-    --buttonTextColor: #fff;
-    --buttonStyleColor: lightblue;
+    --nav-bar-colour: #d1d1d1;
 
     --nav-small: none;
     --nav-big: flex;
@@ -89,10 +87,10 @@ nav{
     padding: 3rem 0rem 0 0;
     width: 13rem;
     height: 100%;
-    background-color: lightblue;
+    background-color: var(--nav-bar-colour);
     display: flex;
     flex-direction: column;
-    transition: 2s;
+    transition: 1.5s;
 }
 .open {
     left: 0;
