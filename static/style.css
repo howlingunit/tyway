@@ -7,17 +7,19 @@
     font-weight: normal;
     margin: 0;
     padding: 0;
+    position: relative;
 }
+
 :root {
     /* light theme */
     -ms-overflow-style: none;
     scrollbar-width: none;
     --textColor: black;
-    --buttonBGColor:  #717171;
-    --buttonTextColor: #fff;
-    --buttonStyleColor: lightblue;
+    --nav-bar-colour: #d1d1d1;
 
-    --navJustifyContent: flex-start;
+    --nav-small: none;
+    --nav-big: flex;
+
 }
 
 ::-webkit-scrollbar {
@@ -26,8 +28,105 @@
 
 @media (max-width: 600px) {
     :root{
-        --navJustifyContent: space-around;
+        --nav-small: flex;
+        --nav-big: none;
     }
+}
+
+nav{
+    padding: 0;
+    width: 100vw;
+    height: 3rem;
+}
+
+.nav-big {
+    display: var(--nav-big);
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.nav-small {
+    display: var(--nav-small);
+    flex-direction: column;
+}
+
+.linkBtn{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 1rem 0.5rem 1rem;
+    width: 100%;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.2rem;
+    transition: 1s;
+}
+.linkBtn:hover{
+    cursor: pointer;
+}
+.nav-small>.nav-options>a>.linkBtn {
+    width: 100%;
+    border-top:0.1rem solid black;
+    margin-top: 1rem;
+}
+
+.linkText{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--textColor);
+    font-family: 'Comfortaa', cursive;
+    transition: 1s;
+}
+.nav-big > a > .linkBtn:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: var(--textColor);
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+.nav-big > a > .linkBtn:hover:before,
+.nav-big > a > .linkBtn:focus:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.burger-button {
+    z-index: 2;
+    margin: 1rem 0 0.2rem 0;
+    width: 3rem;
+    cursor: pointer;
+    fill: var(--textColor);
+}
+
+.nav-options {
+    z-index: 1;
+    position: absolute;
+    padding: 3rem 0rem 0 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--nav-bar-colour);
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.open {
+    left: 0;
+}
+.close {
+    left: -50vw;
+}
+.nav-exit {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 50vw;
+    height: 100vh;
+    right: 0;
 }
 
 .container{
@@ -56,13 +155,13 @@
     width: 100vw;
     color: var(--textColor);
     margin: auto;
-    margin-top: 50em;
+    margin-top: 10em;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    animation: goUp 8s;
+    animation: goUp 3s;
     animation-fill-mode: forwards;
 
 }
@@ -74,37 +173,6 @@
     display: flex;
 }
 
-nav{
-    padding: 0;
-    width: 100vw;
-    height: 3rem;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: var(--navJustifyContent);
-}
-
-.linkBtn{
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0 1rem 0.5rem 1rem;
-    height: 2.5rem;
-    border: 0;
-    border-radius: 0.2rem;
-    transition: 1s;
-}
-.linkBtn:hover{
-    cursor: pointer;
-    background-color: #a3a3a3;
-}
-
-.linkText{
-    font-weight: bold;
-    font-size: 2rem;
-    color: var(--textColor);
-    text-decoration: underline;
-    font-family: 'Comfortaa', cursive;
-}
-
 .title{
     letter-spacing: 0.5rem;
     font-family: 'Comfortaa', cursive;
@@ -113,13 +181,13 @@ nav{
 }
 
 #tyway1{
-    animation: fadeIn 5s 1s;
+    animation: fadeIn 2s 1s;
     animation-fill-mode: forwards;
 
 }
 
 #tyway2{
-    animation: fadeIn 5s 2s;
+    animation: fadeIn 2s 1.2s;
     animation-fill-mode: forwards;
 }
 
@@ -175,6 +243,10 @@ footer{
 
 .arrow{
     font-family: 'Monoton', cursive;
+}
+
+.invis {
+    display: none;
 }
 
 /* animations */
