@@ -12,10 +12,12 @@
     <div class="container">
         <div class="bg">
             <nav class="nav-big">
-                <a href="./apps.html"><button class="linkBtn"><p class="linkText">APPS</p></button></a>
-                <a href="./dev.html"><button class="linkBtn"><p class="linkText">DEV</p></button></a>
-                <a href="https://github.com/howlingunit"><button class="linkBtn"><p class="linkText">GITHUB</p></button></a>
-                <a href="./login.html"><button class="linkBtn"><p class="linkText">LOGIN</p></button></a>
+                <div class="bigNavOptions">
+                    <a href="./apps.html"><button class="linkBtn"><p class="linkText">APPS</p></button></a>
+                    <a href="./dev.html"><button class="linkBtn"><p class="linkText">DEV</p></button></a>
+                    <a href="https://github.com/howlingunit"><button class="linkBtn"><p class="linkText">GITHUB</p></button></a>
+                    <a href="./login.html"><button class="linkBtn"><p class="linkText">LOGIN</p></button></a>
+                </div>
             </nav>
 
             <nav class="nav-small">
@@ -33,10 +35,10 @@
                 <div class="nav-exit invis"></div>
             </nav>
 
-            <div id="heading">
+            <div class="homePageHeading">
                 <div class="titleDiv">
-                    <h1 id="tyway1" class="title">TYWAY</h1>
-                    <h1 id="tyway2" class="title">2.0</h1>
+                    <h1 id="tyway1" class="homePageTitle">TYWAY</h1>
+                    <h1 id="tyway2" class="homePageTitle">2.0</h1>
                 </div>
             </div>
             
@@ -50,6 +52,7 @@
         <iframe src="http://hangman.tyway.net" id="oldSiteFrame"></iframe>
     </div>
 
-    <script src="./lib/start.js"></script>
+    <script src="./lib/start.mjs"></script>
+    <script src="./lib/themes.mjs"></script>
 </body>
 </html>

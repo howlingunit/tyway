@@ -20,6 +20,12 @@
     --nav-small: none;
     --nav-big: flex;
 
+    --pageTitleSize: 3rem;
+
+    --headerDirection: column;
+    --headerSize: 20vh;
+
+
 }
 
 ::-webkit-scrollbar {
@@ -30,20 +36,47 @@
     :root{
         --nav-small: flex;
         --nav-big: none;
+
+        --pageTitleSize: 2rem;
+
+        --headerDirection: row;
+        --headerSize: 7vh;
+
+    
     }
 }
 
 nav{
     padding: 0;
     width: 100vw;
-    height: 3rem;
+    height: 100%;
+    /* height: 3rem; */
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: var(--headerDirection);
+
+
+    background-color: cadetblue;
+    width: 100vw;
+    height: var(--headerSize);
 }
 
 .nav-big {
     display: var(--nav-big);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.bigNavOptions {
+    width: 100%;
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
-
 }
 .nav-small {
     display: var(--nav-small);
@@ -75,7 +108,7 @@ nav{
     font-family: 'Comfortaa', cursive;
     transition: 1s;
 }
-.nav-big > a > .linkBtn:before{
+.nav-big > .bigNavOptions > a > .linkBtn:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -88,8 +121,8 @@ nav{
     transform: scaleX(0);
     transition: .25s linear;
   }
-.nav-big > a > .linkBtn:hover:before,
-.nav-big > a > .linkBtn:focus:before{
+.nav-big > .bigNavOptions > a > .linkBtn:hover:before,
+.nav-big > .bigNavOptions > a > .linkBtn:focus:before{
     visibility: visible;
     transform: scaleX(1);
 }
@@ -111,8 +144,9 @@ nav{
     background-color: var(--nav-bar-colour);
     display: flex;
     flex-direction: column;
-    transition: 0.5s;
+    transition: 0.6s;
 }
+
 .open {
     left: 0;
 }
@@ -127,6 +161,11 @@ nav{
     width: 50vw;
     height: 100vh;
     right: 0;
+}
+.navTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .container{
@@ -151,7 +190,7 @@ nav{
 }
 
 
-#heading{
+.homePageHeading{
     width: 100vw;
     color: var(--textColor);
     margin: auto;
@@ -173,11 +212,18 @@ nav{
     display: flex;
 }
 
-.title{
+.homePageTitle{
     letter-spacing: 0.5rem;
     font-family: 'Comfortaa', cursive;
     font-size: 5rem;
     opacity: 0;
+}
+
+.pageTitle {
+    letter-spacing: 0.5rem;
+    font-family: 'Comfortaa', cursive;
+    font-size: var(--pageTitleSize);
+
 }
 
 #tyway1{
@@ -207,6 +253,7 @@ h2{
 }
 
 .titleDiv{
+    display: flex;
     justify-content: center;
     flex-direction:column;
     align-items: center;
