@@ -29,6 +29,11 @@ body{
     --headerDirection: column;
     --headerSize: 20vh;
 
+    --appWidthIframeLink: 85vw;
+    --appWidthGitLink: 15vw;
+    --appBGSizeGitLink: 5rem 5rem;
+    --appHeightWebApp: 20vh;
+    --appOpacityIframe: 0.2;
 
 }
 
@@ -46,7 +51,11 @@ body{
         --headerDirection: row;
         --headerSize: 7vh;
 
-    
+        --appWidthIframeLink: 77vw;
+        --appWidthGitLink: 23vw;
+        --appBGSizeGitLink: 2rem 2rem;
+        --appHeightWebApp: 15vh;
+
     }
 }
 
@@ -233,12 +242,6 @@ header {
     align-self: center;
 
 }
-.appTitle {
-    color: #fff;
-    font-family: 'Comfortaa', cursive;
-    font-size: 2rem;
-    text-decoration: underline;
-}
 
 #tyway1{
     animation: fadeIn 2s 1s;
@@ -281,7 +284,6 @@ footer{
 
 #scrollDown{
     color: #fff;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,7 +299,7 @@ footer{
 
 .webApp {
     width: 100vw;
-    height: 20vh;
+    height: var(--appHeightWebApp);
 
     display: flex;
     flex-direction:row ;
@@ -306,15 +308,19 @@ footer{
 }
 .iframeLink {
     z-index: 0;
-    width: 90%;
+    width: var(--appWidthIframeLink);
     
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+.iframeLink:hover {
+    --appOpacityIframe: 0.7;
+}
+
 .webApp>a>iframe {
-    opacity: 0.2;
+    opacity: var(--appOpacityIframe);
     position: absolute;
     pointer-events: none;
     width: 100%;
@@ -324,13 +330,49 @@ footer{
 
 .gitLink {
     height: 100%;
-    width: 10%;
+    width: var(--appWidthGitLink);
 
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 5rem 5rem;
+    background-size: var(--appBGSizeGitLink);
 
     background-image: url("./assets/GitHub-Logos/GitHub-Mark-W.png");
+    transition: 0.5s;
+}
+.gitLink:hover {
+    transform: scale(1.2);
+}
+
+.appInfo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.appTitle {
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.statusDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statusP {
+    font-family: monospace;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.released {
+    color: lightgreen;
 }
 /* animations */
 
