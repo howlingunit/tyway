@@ -8,6 +8,11 @@
     margin: 0;
     padding: 0;
     position: relative;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
 }
 
 :root {
@@ -20,6 +25,19 @@
     --nav-small: none;
     --nav-big: flex;
 
+    --pageTitleSize: 3rem;
+
+    --headerDirection: column;
+    --headerSize: 20vh;
+
+    --appWidthIframeLink: 85vw;
+    --appWidthGitLink: 15vw;
+    --appBGSizeGitLink: 5rem 5rem;
+    --appHeightWebApp: 20vh;
+    --appOpacityIframe: 0.2;
+    --appFontSizeStatusP: 2rem;
+    --appFontSizeTitle: 3rem;
+
 }
 
 ::-webkit-scrollbar {
@@ -30,24 +48,59 @@
     :root{
         --nav-small: flex;
         --nav-big: none;
+
+        --pageTitleSize: 2rem;
+
+        --headerDirection: row;
+        --headerSize: 7vh;
+
+        --appWidthIframeLink: 77vw;
+        --appWidthGitLink: 23vw;
+        --appBGSizeGitLink: 2rem 2rem;
+        --appHeightWebApp: 15vh;
+        --appFontSizeStatusP: 1rem;
+        --appFontSizeTitle: 1.5rem;
+
+
     }
 }
 
 nav{
     padding: 0;
     width: 100vw;
-    height: 3rem;
+    height: 100%;
+    /* height: 3rem; */
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: var(--headerDirection);
+
+
+    background-color: gray;
+    width: 100vw;
+    height: var(--headerSize);
 }
 
 .nav-big {
     display: var(--nav-big);
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.bigNavOptions {
+    width: 100%;
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
-
 }
 .nav-small {
     display: var(--nav-small);
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .linkBtn{
@@ -75,7 +128,7 @@ nav{
     font-family: 'Comfortaa', cursive;
     transition: 1s;
 }
-.nav-big > a > .linkBtn:before{
+.nav-big > .bigNavOptions > a > .linkBtn:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -88,15 +141,14 @@ nav{
     transform: scaleX(0);
     transition: .25s linear;
   }
-.nav-big > a > .linkBtn:hover:before,
-.nav-big > a > .linkBtn:focus:before{
+.nav-big > .bigNavOptions > a > .linkBtn:hover:before,
+.nav-big > .bigNavOptions > a > .linkBtn:focus:before{
     visibility: visible;
     transform: scaleX(1);
 }
 
 .burger-button {
     z-index: 2;
-    margin: 1rem 0 0.2rem 0;
     width: 3rem;
     cursor: pointer;
     fill: var(--textColor);
@@ -108,16 +160,18 @@ nav{
     padding: 3rem 0rem 0 0;
     width: 50vw;
     height: 100vh;
+    top: 0;
     background-color: var(--nav-bar-colour);
     display: flex;
     flex-direction: column;
-    transition: 0.5s;
+    transition: 0.6s;
 }
+
 .open {
     left: 0;
 }
 .close {
-    left: -50vw;
+    left: -60vw;
 }
 .nav-exit {
     z-index: 3;
@@ -127,6 +181,17 @@ nav{
     width: 50vw;
     height: 100vh;
     right: 0;
+}
+.navTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 .container{
@@ -148,10 +213,11 @@ nav{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
 }
 
 
-#heading{
+.homePageHeading{
     width: 100vw;
     color: var(--textColor);
     margin: auto;
@@ -173,11 +239,20 @@ nav{
     display: flex;
 }
 
-.title{
+.homePageTitle{
     letter-spacing: 0.5rem;
     font-family: 'Comfortaa', cursive;
     font-size: 5rem;
     opacity: 0;
+}
+
+.pageTitle {
+    letter-spacing: 0.5rem;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Comfortaa', cursive;
+    font-size: var(--pageTitleSize);
+    align-self: center;
+
 }
 
 #tyway1{
@@ -191,22 +266,8 @@ nav{
     animation-fill-mode: forwards;
 }
 
-h2{
-    letter-spacing: 0.2rem;
-    font-family: 'Comfortaa', cursive;
-    font-size: 3rem;
-    text-decoration: underline;
-    opacity: 0;
-    animation: fadeIn 5s 3s;
-    animation-fill-mode: forwards;
-    text-align: center;
-}
-
-#subHeading1{
-    margin-top: 5rem;
-}
-
 .titleDiv{
+    display: flex;
     justify-content: center;
     flex-direction:column;
     align-items: center;
@@ -235,7 +296,6 @@ footer{
 
 #scrollDown{
     color: #fff;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,6 +307,90 @@ footer{
 
 .invis {
     display: none;
+}
+
+.webApp {
+    width: 100vw;
+    height: var(--appHeightWebApp);
+
+    display: flex;
+    flex-direction:row ;
+    
+    border-top: 0.5rem solid white;
+}
+.iframeLink {
+    z-index: 0;
+    width: var(--appWidthIframeLink);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.iframeLink:hover {
+    --appOpacityIframe: 0.7;
+}
+
+.webApp>a>iframe {
+    opacity: var(--appOpacityIframe);
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.gitLink {
+    height: 100%;
+    width: var(--appWidthGitLink);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: var(--appBGSizeGitLink);
+
+    background-image: url("./assets/GitHub-Logos/GitHub-Mark-W.png");
+    transition: 0.5s;
+}
+.gitLink:hover {
+    transform: scale(1.2);
+}
+
+.appInfo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.appTitle {
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    font-size: var(--appFontSizeTitle);
+    text-decoration: underline;
+}
+
+.statusDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statusP {
+    font-family: monospace;
+    color: #fff;
+    font-size: var(--appFontSizeStatusP);
+    text-decoration: none;
+}
+.released {
+    color: lightgreen;
+}
+.inDevelopment {
+    color: orange;
+}
+.idea {
+    color: red;
 }
 
 /* animations */
