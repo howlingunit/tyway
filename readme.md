@@ -7,8 +7,11 @@ This site is my portfolio site, where I can host all my web apps and show off th
 
 ## to-do
 * apps page
+  * back-end
 * dev page
 * socials page and bio
 * login and admin page
 ## done list
+* apps page
+  * front-end
 * nav bar

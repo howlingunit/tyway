@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     position: relative;
+    text-decoration: none;
 }
 
 body{
@@ -34,6 +35,8 @@ body{
     --appBGSizeGitLink: 5rem 5rem;
     --appHeightWebApp: 20vh;
     --appOpacityIframe: 0.2;
+    --appFontSizeStatusP: 2rem;
+    --appFontSizeTitle: 3rem;
 
 }
 
@@ -55,6 +58,9 @@ body{
         --appWidthGitLink: 23vw;
         --appBGSizeGitLink: 2rem 2rem;
         --appHeightWebApp: 15vh;
+        --appFontSizeStatusP: 1rem;
+        --appFontSizeTitle: 1.5rem;
+
 
     }
 }
@@ -180,6 +186,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 .container{
@@ -356,7 +368,7 @@ footer{
 .appTitle {
     color: #fff;
     font-family: 'Comfortaa', cursive;
-    font-size: 3rem;
+    font-size: var(--appFontSizeTitle);
     text-decoration: underline;
 }
 
@@ -368,12 +380,19 @@ footer{
 .statusP {
     font-family: monospace;
     color: #fff;
-    font-size: 2rem;
+    font-size: var(--appFontSizeStatusP);
     text-decoration: none;
 }
 .released {
     color: lightgreen;
 }
+.inDevelopment {
+    color: orange;
+}
+.idea {
+    color: red;
+}
+
 /* animations */
 
 @keyframes fadeIn {
