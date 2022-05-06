@@ -186,6 +186,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    white-space: nowrap;
 }
 
 .disabled {
@@ -386,7 +387,7 @@ footer{
 .released {
     color: lightgreen;
 }
-.inDevelopment {
+.WIP {
     color: orange;
 }
 .idea {

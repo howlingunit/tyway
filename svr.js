@@ -1,4 +1,5 @@
 import express from 'express';
+import * as api from './lib/api.js';
 
 const app = express();
 const myLogger = function (req, res, next) {
@@ -13,5 +14,7 @@ const myLogger = function (req, res, next) {
 app.use(myLogger);
 
 app.use(express.static('static'));
+
+app.get('/appData', api.appsData);
 
 app.listen(8080);
