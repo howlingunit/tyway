@@ -357,13 +357,15 @@ footer{
 }
 
 .appInfo {
-    display: flex;
+    display: grid;
     width: 100%;
     height: 100%;
 
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    grid-template-columns: 1fr 1fr;
 }
 
 .appTitle {
@@ -371,6 +373,7 @@ footer{
     font-family: 'Comfortaa', cursive;
     font-size: var(--appFontSizeTitle);
     text-decoration: underline;
+    margin-left: 3.5rem;
 }
 
 .statusDiv{

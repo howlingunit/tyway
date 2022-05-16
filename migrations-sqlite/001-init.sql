@@ -21,4 +21,7 @@ INSERT INTO states(id, status) VALUES
 
 INSERT INTO apps(id, name, Link, gitLink, status) VALUES
   (1, 'Hangman', 'http://hangman.tyway.net', 'https://github.com/howlingunit/hangman', 1),
-  (3, 'Old-Tyway', 'http://old.tyway.net', 'https://github.com/howlingunit/old-tyway', 1);
+  (2, 'Star wars weather', 'http://sww.tyway.net', 'https://github.com/howlingunit/star-wars-weather', 2),
+  (3, 'Dark hallway 2.0', 'http://dh.tyway.net', 'https://github.com/howlingunit/darkhallwayV2', 2),
+  (4, 'Old-Tyway', 'http://old.tyway.net', 'https://github.com/howlingunit/old-tyway', 1),
+  (5, 'Local apps', 'http://local-apps.tyway.net', 'https://github.com/howlingunit/local-apps', 3);
