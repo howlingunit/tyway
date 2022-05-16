@@ -6,9 +6,11 @@ This site is my portfolio site, where I can host all my web apps and show off th
 * the "working" branch for this site that contains the latest features is hosted at [preview.tyway.net](http://preview.tyway.net)
 
 ## to-do
-* apps page
-* dev page
+* update page
 * socials page and bio
 * login and admin page
 ## done list
+* apps page
+  * back-end
+  * front-end
 * nav bar
