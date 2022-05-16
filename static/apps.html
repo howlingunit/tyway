@@ -12,7 +12,7 @@
     <nav class="nav-big">
       <div class="bigNavOptions">
         <a href="./apps.html"><button class="linkBtn"><p class="linkText">APPS</p></button></a>
-        <a href="./dev.html"><button class="linkBtn disabled"><p class="linkText">DEV</p></button></a>
+        <a href="./updates.html"><button class="linkBtn disabled"><p class="linkText">UPDATES</p></button></a>
         <a href="https://github.com/howlingunit"><button class="linkBtn"><p class="linkText">GITHUB</p></button></a>
         <a href="./login.html"><button class="linkBtn disabled"><p class="linkText">LOGIN</p></button></a>
       </div>
@@ -30,7 +30,7 @@
       </div>
       <div class="nav-options close">
           <a href="./apps.html"><button class="linkBtn"><p class="linkText">APPS</p></button></a>
-          <a href="./dev.html"><button class="linkBtn disabled"><p class="linkText">DEV</p></button></a>
+          <a href="./updates.html"><button class="linkBtn disabled"><p class="linkText">UPDATES</p></button></a>
           <a href="https://github.com/howlingunit"><button class="linkBtn"><p class="linkText">GITHUB</p></button></a>
           <a href="./login.html"><button class="linkBtn disabled"><p class="linkText">LOGIN</p></button></a>
       </div>
@@ -38,37 +38,10 @@
     </nav>
   </header>
 
-  <div class="webApp">
-    <a href="http://hangman.tyway.net" class="iframeLink">
-      <iframe src="http://hangman.tyway.net" scrolling="no" frameborder="0"></iframe>
-      <div class="appInfo">
-        <h2 class="appTitle">Hangman</h2>
-        <div class="statusDiv">
-          <p class="statusP">status:</p>
-          <p class="statusP released">released</p>
-        </div>
-      </div>
-      
-    </a>
-    <a href="http://github.com/howlingunit/hangman" class="gitLink"></a>
-  </div>
-
-  <div class="webApp">
-    <a href="http://old.tyway.net" class="iframeLink">
-      <iframe src="http://old.tyway.net" scrolling="no" frameborder="0"></iframe>
-      <div class="appInfo">
-        <h2 class="appTitle">Old-Tyway</h2>
-        <div class="statusDiv">
-          <p class="statusP">status:</p>
-          <p class="statusP released">released</p>
-        </div>
-      </div>
-      
-    </a>
-    <a href="http://github.com/howlingunit/old-tyway" class="gitLink"></a>
-  </div>
+  <div class="apps"></div>
 
   <script src="./lib/start.mjs"></script>
+  <script src="./lib/app-constructor.mjs"></script>
 
 </body>
 </html>
