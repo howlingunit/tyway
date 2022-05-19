@@ -12,7 +12,7 @@ function lightTheme() {
 
 function selectBGtheme() {
   const bg = document.querySelector('.bg');
-  const imgs = ['B_forrest.jpg', 'B_mountain.jpg', 'D_city.jpg', 'D_city2.jpg'];
+  const imgs = ['B_forrest.jpg', 'B_mountain.jpg', 'B_beach1.jpg', 'B_beach2.jpg', 'D_city.jpg', 'D_city2.jpg'];
   const img = imgs[Math.floor(Math.random() * imgs.length)];
   bg.style.backgroundImage = `url("assets/homePage/${img}")`;
   if (img[0] === 'B') {
