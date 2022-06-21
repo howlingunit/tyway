@@ -23,3 +23,14 @@ function selectBGtheme() {
 }
 
 selectBGtheme();
+
+async function setLatestApp() {
+  const latestApp = document.querySelector('#latestApp');
+
+  const app = await fetch('/latestApp');
+
+
+  latestApp.src = await app.json();
+}
+
+setLatestApp();
