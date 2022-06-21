@@ -11,10 +11,12 @@ const myLogger = function (req, res, next) {
   next();
 };
 
-app.use(myLogger);
+// app.use(myLogger);
 
 app.use(express.static('static'));
 
 app.get('/appData', api.appsData);
+
+app.get('/latestApp', api.latestApp);
 
 app.listen(8080);
