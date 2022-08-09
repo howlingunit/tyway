@@ -19,4 +19,6 @@ app.get('/appData', api.appsData);
 
 app.get('/latestApp', api.latestApp);
 
+app.get('/updateData', api.updateData);
+
 app.listen(8080);

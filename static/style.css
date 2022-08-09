@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 /* blank slate */
 *{
     box-sizing: border-box;
@@ -38,6 +39,8 @@ body{
     --appFontSizeStatusP: 2rem;
     --appFontSizeTitle: 3rem;
 
+    --updates-font-size: 2.5rem;
+
 }
 
 ::-webkit-scrollbar {
@@ -61,6 +64,9 @@ body{
         --appFontSizeStatusP: 1rem;
         --appFontSizeTitle: 1.5rem;
 
+        --updates-font-size: 1.5rem;
+
+
 
     }
 }
@@ -81,6 +87,7 @@ header {
     background-color: gray;
     width: 100vw;
     height: var(--headerSize);
+    height: auto;
 }
 
 .nav-big {
@@ -88,6 +95,8 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0 1rem 0;
 
 }
 
@@ -101,6 +110,7 @@ header {
     display: var(--nav-small);
     flex-direction: column;
     justify-content: space-around;
+    padding: 1rem 0 1rem 0;
 }
 
 .linkBtn{
@@ -157,7 +167,7 @@ header {
 .nav-options {
     z-index: 1;
     position: absolute;
-    padding: 3rem 0rem 0 0;
+    padding-top: 5rem;
     width: 50vw;
     height: 100vh;
     top: 0;
@@ -399,6 +409,35 @@ footer{
     color: red;
 }
 
+/* updates */
+
+#updates {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    margin-top: 4rem;
+    padding: 0 3% 0 3%;
+}
+#updates > section {
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: var(--updates-font-size);
+    gap: 2rem;
+}
+
+#updates > section > p > a{
+    color: #fff;
+    text-decoration: underline;
+}
 /* animations */
 
 @keyframes fadeIn {
