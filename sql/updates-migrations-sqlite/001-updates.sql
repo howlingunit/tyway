@@ -20,5 +20,5 @@ INSERT INTO services(id, service) VALUES
   (3, 'STEFS-MASSAGE');
 
 INSERT INTO updates(id, description, Link, date, service) VALUES
-  (2, 'fixed navbar sizing', 'http://preview.tyway.net/', '2022-07-09', 1),
-  (1, 'Added the updates page', 'http://preview.tyway.net/updates.html', '2022-07-09', 1);
+  (2, 'fixed navbar sizing', 'http://preview.tyway.net/', '2022-08-09', 1),
+  (1, 'Added the updates page', 'http://preview.tyway.net/updates.html', '2022-08-09', 1);
