@@ -1,0 +1,84 @@
+
+:root {
+  --about-me-width: 70%;
+  --about-text-padding: 0rem 5rem 2rem 5rem;
+  --about-text-p-font-size: 2rem;
+  --about-pic-size: 14rem;
+
+}
+
+
+@media (max-width: 600px) {
+  :root{
+    --about-me-width: 95%;
+    --about-text-padding: 0rem 1rem 2rem 1rem;
+    --about-text-p-font-size: 1.4rem;
+    --about-pic-size: 9rem;
+
+
+  }
+}
+
+
+
+.about-me {
+  color: #fff;
+  width: var(--about-me-width);
+  margin: auto;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  border-radius: 3rem;
+  background: linear-gradient(180deg, #545454 0%, #101010 100%);   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-pic {
+  background-color: #000;
+  width: var(--about-pic-size);
+  height: var(--about-pic-size);
+  border-radius: var(--about-pic-size);
+  bottom: calc(var(--about-pic-size) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-pic>div {
+  height: 85%;
+  width: 85%;
+  border-radius: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-text {
+  top: -4rem;
+  font-family: 'Poppins', sans-serif;
+  padding: var(--about-text-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-text>p {
+  text-align: center;
+  font-size: var(--about-text-p-font-size);
+}
+
+.about-button {
+  cursor: pointer;
+  top: -3rem;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #494949;
+  border: none;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
+  transition: 0.5s;
+
+}
+.about-button:hover {
+  background-color: #000;
+}
