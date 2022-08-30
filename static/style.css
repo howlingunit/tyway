@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* blank slate */
 *{
     box-sizing: border-box;
@@ -14,6 +15,10 @@
 
 body{
     background-color: black;
+}
+
+::-webkit-scrollbar {
+    display: none; 
 }
 
 :root {
@@ -43,9 +48,6 @@ body{
 
 }
 
-::-webkit-scrollbar {
-    display: none; 
-}
 
 @media (max-width: 600px) {
     :root{
@@ -438,6 +440,8 @@ footer{
     color: #fff;
     text-decoration: underline;
 }
+
+
 /* animations */
 
 @keyframes fadeIn {
