@@ -1,0 +1,130 @@
+:root {
+
+}
+
+@media (max-width: 600px) {
+    :root{
+
+    }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.bg{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+
+  background-image: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+}
+
+.homePageHeading{
+  width: 100vw;
+  color: var(--textColor);
+  margin: auto;
+  margin-top: 10em;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  animation: goUp 3s;
+  animation-fill-mode: forwards;
+
+}
+
+#heading > *{
+  margin-top: 3rem;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+.homePageTitle{
+  letter-spacing: 0.5rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 5rem;
+  opacity: 0;
+}
+
+#tyway1{
+  animation: fadeIn 2s 1s;
+  animation-fill-mode: forwards;
+
+}
+
+#tyway2{
+  animation: fadeIn 2s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+footer{
+  justify-content: center;
+  margin-top: auto;
+
+  opacity: 0;
+  animation: fadeIn 3s 2s, bounce 5s 2s, bounce 5s 2s infinite;
+  animation-fill-mode: forwards;
+
+
+}
+
+#scrollDown{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow{
+  font-family: 'Monoton', cursive;
+}
+
+#latestApp{
+  margin-top: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* animations */
+
+@keyframes fadeIn {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+  
+}
+
+@keyframes goUp {
+  100%{
+      margin-top: 2rem;
+  }
+}
+
+@keyframes bounce {
+  25%{
+      padding-bottom: 0;
+  }
+  50%{
+      padding-bottom: 1rem;
+  }
+  75%{
+      padding-bottom: 0;
+  }
+}
