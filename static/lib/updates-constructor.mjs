@@ -6,6 +6,7 @@ async function appConstructor() {
   for (let i = 0; i < updates.length; i++) {
     // make update
     const update = document.createElement('section');
+    update.classList.add(`${updates[i].type}`);
     updateDiv.appendChild(update);
 
     // make update text
@@ -20,7 +21,7 @@ async function appConstructor() {
     // make link a
     const updateLinkA = document.createElement('a');
     updateLinkA.textContent = 'Link';
-    updateLinkA.href = `${updates[i].Link}`;
+    updateLinkA.href = `${updates[i].link}`;
     updateLinkP.appendChild(updateLinkA);
   }
 }
