@@ -61,13 +61,13 @@
 }
 
 #tyway1{
-  animation: fadeIn 2s 1s;
+  animation: fadeIn 2s 0.2s;
   animation-fill-mode: forwards;
 
 }
 
 #tyway2{
-  animation: fadeIn 2s 1.2s;
+  animation: fadeIn 2s 0.4s;
   animation-fill-mode: forwards;
 }
 
@@ -76,7 +76,7 @@ footer{
   margin-top: auto;
 
   opacity: 0;
-  animation: fadeIn 3s 2s, bounce 5s 2s, bounce 5s 2s infinite;
+  animation: fadeIn 2s 2s, bounce 5s 2s, bounce 5s 2s infinite;
   animation-fill-mode: forwards;
 
 

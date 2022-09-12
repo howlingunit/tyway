@@ -16,7 +16,7 @@ CREATE TABLE updates(
 );
 
 INSERT INTO services(id, service, link) VALUES 
-  (1, 'TYWAY', 'http://preview.tyway.net'),
+  (1, 'TYWAY', 'http://tyway.net'),
   (2, 'SYSTEM', 'http://tyway.net'),
   (3, 'STEFS-MASSAGE', 'http://sms-preview.tyway.net');
 

@@ -96,12 +96,12 @@
   font-size: var(--appFontSizeStatusP);
   text-decoration: none;
 }
-.released {
+.Released {
   color: lightgreen;
 }
 .WIP {
   color: orange;
 }
-.idea {
+.Backlog{
   color: red;
 }
