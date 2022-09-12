@@ -21,7 +21,7 @@ INSERT INTO services(id, service, link) VALUES
   (3, 'STEFS-MASSAGE', 'http://sms-preview.tyway.net');
 
 INSERT INTO updates(id, description, type, date, service) VALUES
-  (9, 'V2.0 released', 'rel', '2022-09-08', 1),
+  (9, 'V2.0 released', 'rel', '2022-09-12', 1),
   (8, 'fixed home page bug', 'std', '2022-09-08', 1),
   (7, 'more content', 'std', '2022-09-08', 3),
   (6, 'added about page', 'std', '2022-08-30', 1),
