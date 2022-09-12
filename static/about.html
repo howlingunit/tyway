@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="apps-style.css">
-  <title>TYWAY - APPS</title>
+  <link rel="stylesheet" href="about-style.css">
+  <title>TYWAY - ABOUT</title>
 </head>
 <body>
   <header>
@@ -17,7 +17,7 @@
         <a href="https://github.com/howlingunit"><button class="linkBtn"><p class="linkText">GITHUB</p></button></a>
         <a href="./about.html"><button class="linkBtn "><p class="linkText">ABOUT</p></button></a>
       </div>
-      <h1 class="pageTitle">TYWAY - APPS</h1>
+      <h1 class="pageTitle">TYWAY - ABOUT</h1>
 
     </nav>
     <nav class="nav-small">
@@ -27,7 +27,7 @@
             <rect y="30" width="100" height="20" rx="8"></rect>
             <rect y="60" width="100" height="20" rx="8"></rect>
         </svg>
-        <h1 class="pageTitle">TYWAY - <br> APPS</h1>
+        <h1 class="pageTitle">TYWAY - <br> ABOUT</h1>
       </div>
       <div class="nav-options close">
           <a href="./apps.html"><button class="linkBtn"><p class="linkText">APPS</p></button></a>
@@ -39,10 +39,19 @@
     </nav>
   </header>
 
-  <div class="apps"></div>
+  <div class="about-me">
+    <div class="about-pic">
+      <div style="background-image: url('./assets/profile-pic.jpg');"></div>
+    </div>
+    <div class="about-text">
+      <p>Hi, I’m Tyler, and I love designing, building, and implementing cool ideas. I’m studying software engineering at the University of Portsmouth, which has significantly impacted how I develop apps, especially in Node JS. I’ve also been trained to use PostgreSQL, Python, the fundamentals of rust, and some of the .net languages (VB and C#).</p>
+      <p>TYWAY is where I can self-host my apps and show off what I’ve built; for example, in my first year of uni, I made a hangman web app which I now host at hangman.tyway.net. I plan to add many more web apps but not only that, I love developing local applications and programs, which I also plan to show off on this platform. Making things for TYWAY is something I love to do because this is where I can apply what I’ve learned and experiment with other technologies.</p>
+      <p>Thanks for visiting, and be sure to check out my collection of apps! </p>
+    </div>
+    <a href="./apps.html"><button class="about-button">APPS</button></a>
+  </div>
+
 
   <script src="./lib/start.mjs"></script>
-  <script src="./lib/app-constructor.mjs"></script>
-
 </body>
 </html>

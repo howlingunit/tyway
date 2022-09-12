@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* blank slate */
 *{
     box-sizing: border-box;
@@ -13,6 +14,10 @@
 
 body{
     background-color: black;
+}
+
+::-webkit-scrollbar {
+    display: none; 
 }
 
 :root {
@@ -30,19 +35,8 @@ body{
     --headerDirection: column;
     --headerSize: 20vh;
 
-    --appWidthIframeLink: 85vw;
-    --appWidthGitLink: 15vw;
-    --appBGSizeGitLink: 5rem 5rem;
-    --appHeightWebApp: 20vh;
-    --appOpacityIframe: 0.2;
-    --appFontSizeStatusP: 2rem;
-    --appFontSizeTitle: 3rem;
-
 }
 
-::-webkit-scrollbar {
-    display: none; 
-}
 
 @media (max-width: 600px) {
     :root{
@@ -53,15 +47,6 @@ body{
 
         --headerDirection: row;
         --headerSize: 7vh;
-
-        --appWidthIframeLink: 77vw;
-        --appWidthGitLink: 23vw;
-        --appBGSizeGitLink: 2rem 2rem;
-        --appHeightWebApp: 15vh;
-        --appFontSizeStatusP: 1rem;
-        --appFontSizeTitle: 1.5rem;
-
-
     }
 }
 
@@ -69,7 +54,6 @@ nav{
     padding: 0;
     width: 100vw;
     height: 100%;
-    /* height: 3rem; */
 }
 header {
     display: flex;
@@ -81,6 +65,7 @@ header {
     background-color: gray;
     width: 100vw;
     height: var(--headerSize);
+    height: auto;
 }
 
 .nav-big {
@@ -88,6 +73,8 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0 1rem 0;
 
 }
 
@@ -101,6 +88,7 @@ header {
     display: var(--nav-small);
     flex-direction: column;
     justify-content: space-around;
+    padding: 1rem 0 1rem 0;
 }
 
 .linkBtn{
@@ -157,7 +145,7 @@ header {
 .nav-options {
     z-index: 1;
     position: absolute;
-    padding: 3rem 0rem 0 0;
+    padding-top: 5rem;
     width: 50vw;
     height: 100vh;
     top: 0;
@@ -166,6 +154,15 @@ header {
     flex-direction: column;
     transition: 0.6s;
 }
+
+.pageTitle {
+    letter-spacing: 0.5rem;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Comfortaa', cursive;
+    font-size: var(--pageTitleSize);
+    align-self: center;
+  
+  }
 
 .open {
     left: 0;
@@ -189,84 +186,6 @@ header {
     white-space: nowrap;
 }
 
-.disabled {
-    opacity: 0.5;
-    pointer-events: none;
-    cursor: not-allowed;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-}
-
-.bg{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-
-    min-width: 100vw;
-    min-height: 100vh;
-    position: absolute;
-
-    background-image: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-}
-
-
-.homePageHeading{
-    width: 100vw;
-    color: var(--textColor);
-    margin: auto;
-    margin-top: 10em;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    animation: goUp 3s;
-    animation-fill-mode: forwards;
-
-}
-
-#heading > *{
-    margin-top: 3rem;
-    position: relative;
-    margin: auto;
-    display: flex;
-}
-
-.homePageTitle{
-    letter-spacing: 0.5rem;
-    font-family: 'Comfortaa', cursive;
-    font-size: 5rem;
-    opacity: 0;
-}
-
-.pageTitle {
-    letter-spacing: 0.5rem;
-    /* font-family: 'Comfortaa', cursive; */
-    font-family: 'Comfortaa', cursive;
-    font-size: var(--pageTitleSize);
-    align-self: center;
-
-}
-
-#tyway1{
-    animation: fadeIn 2s 1s;
-    animation-fill-mode: forwards;
-
-}
-
-#tyway2{
-    animation: fadeIn 2s 1.2s;
-    animation-fill-mode: forwards;
-}
-
 .titleDiv{
     display: flex;
     justify-content: center;
@@ -274,155 +193,10 @@ header {
     align-items: center;
 }
 
-#oldSiteFrame{
-    margin-top: 100vh;
-    width: 100vw;
-    height: 100vh;
-}
-
 a{
     color: var(--textColor);
 }
 
-footer{
-    justify-content: center;
-    margin-top: auto;
-
-    opacity: 0;
-    animation: fadeIn 3s 6s, bounce 5s 10s, bounce 5s 13s infinite;
-    animation-fill-mode: forwards;
-
-
-}
-
-#scrollDown{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.arrow{
-    font-family: 'Monoton', cursive;
-}
-
 .invis {
     display: none;
-}
-
-.webApp {
-    width: 100vw;
-    height: var(--appHeightWebApp);
-
-    display: flex;
-    flex-direction:row ;
-    
-    border-top: 0.5rem solid white;
-}
-.iframeLink {
-    z-index: 0;
-    width: var(--appWidthIframeLink);
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.iframeLink:hover {
-    --appOpacityIframe: 0.7;
-}
-
-.webApp>a>iframe {
-    opacity: var(--appOpacityIframe);
-    position: absolute;
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-.gitLink {
-    height: 100%;
-    width: var(--appWidthGitLink);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: var(--appBGSizeGitLink);
-
-    background-image: url("./assets/GitHub-Logos/GitHub-Mark-W.png");
-    transition: 0.5s;
-}
-.gitLink:hover {
-    transform: scale(1.2);
-}
-
-.appInfo {
-    display: grid;
-    width: 100%;
-    height: 100%;
-
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    grid-template-columns: 1fr 1fr;
-}
-
-.appTitle {
-    color: #fff;
-    font-family: 'Comfortaa', cursive;
-    font-size: var(--appFontSizeTitle);
-    text-decoration: underline;
-    margin-left: 3.5rem;
-}
-
-.statusDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.statusP {
-    font-family: monospace;
-    color: #fff;
-    font-size: var(--appFontSizeStatusP);
-    text-decoration: none;
-}
-.released {
-    color: lightgreen;
-}
-.WIP {
-    color: orange;
-}
-.idea {
-    color: red;
-}
-
-/* animations */
-
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-    
-}
-
-@keyframes goUp {
-    100%{
-        margin-top: 2rem;
-    }
-}
-
-@keyframes bounce {
-    25%{
-        padding-bottom: 0;
-    }
-    50%{
-        padding-bottom: 1rem;
-    }
-    75%{
-        padding-bottom: 0;
-    }
 }
