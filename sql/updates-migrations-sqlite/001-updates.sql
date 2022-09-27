@@ -18,9 +18,11 @@ CREATE TABLE updates(
 INSERT INTO services(id, service, link) VALUES 
   (1, 'TYWAY', 'http://tyway.net'),
   (2, 'SYSTEM', 'http://tyway.net'),
+  (4, 'SWW', 'http://sww.tyway.net'),
   (3, 'STEFS-MASSAGE', 'http://sms-preview.tyway.net');
 
 INSERT INTO updates(id, description, type, date, service) VALUES
+  (13, 'Released site preview', 'rel', '2022-09-26', 4),
   (12, 'Added text content', 'std', '2022-09-22', 2),
   (10, 'Added locations page and updated bookings page', 'std', '2022-09-14', 2),
   (9, 'V2.0 released', 'rel', '2022-09-08', 1),
