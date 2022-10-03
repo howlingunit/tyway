@@ -16,15 +16,16 @@ CREATE TABLE updates(
 );
 
 INSERT INTO services(id, service, link) VALUES 
-  (1, 'TYWAY', 'http://tyway.net'),
-  (2, 'SYSTEM', 'http://tyway.net'),
-  (4, 'SWW', 'http://sww.tyway.net'),
-  (3, 'STEFS-MASSAGE', 'http://stefsmassage.co.uk');
+  (1, 'TYWAY', 'https://tyway.net'),
+  (2, 'SYSTEM', 'https://tyway.net'),
+  (4, 'SWW', 'https://sww.tyway.net'),
+  (3, 'STEFS-MASSAGE', 'https://stefsmassage.co.uk');
 
 INSERT INTO updates(id, description, type, date, service) VALUES
+  (15, 'now using HTTPS', 'rel', '2022-10-03', 3),
   (14, 'Released site', 'rel', '2022-09-27', 3),
   (13, 'Released site preview', 'rel', '2022-09-26', 4),
-  (12, 'Added text content', 'std', '2022-09-22', 2),
+  (12, 'Added text content', 'std', '2022-09-22', 3),
   (10, 'Added locations page and updated bookings page', 'std', '2022-09-14', 2),
   (9, 'V2.0 released', 'rel', '2022-09-08', 1),
   (8, 'fixed home page bug', 'std', '2022-09-08', 1),
