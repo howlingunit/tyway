@@ -5,16 +5,19 @@
   --about-text-p-font-size: 2rem;
   --about-pic-size: 14rem;
 
+  --contact-info-flex-direction: row;
+
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
   :root{
     --about-me-width: 95%;
     --about-text-padding: 0rem 1rem 2rem 1rem;
     --about-text-p-font-size: 1.4rem;
     --about-pic-size: 9rem;
 
+    --contact-info-flex-direction: column;
 
   }
 }
@@ -65,20 +68,35 @@
   font-size: var(--about-text-p-font-size);
 }
 
+.contact-info {
+  top: -3rem;
+  margin: 0 0 3rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: var(--contact-info-flex-direction);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .about-button {
   cursor: pointer;
-  top: -3rem;
-  width: 15rem;
-  height: 4rem;
   border-radius: 2rem;
+  width: 15rem;
+  padding: 0.5rem 0 0.5rem 0;
   background-color: #494949;
   border: none;
   color: #fff;
   font-family: 'Comfortaa', cursive;
   font-size: 2rem;
   transition: 0.5s;
-
 }
 .about-button:hover {
   background-color: #000;
+}
+
+.socials>a>.about-button{
+  width: 12rem;
+  font-size: 1.5rem;
 }
