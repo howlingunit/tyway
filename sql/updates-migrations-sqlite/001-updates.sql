@@ -22,6 +22,12 @@ INSERT INTO services(id, service, link) VALUES
   (3, 'STEFS-MASSAGE', 'https://stefsmassage.co.uk');
 
 INSERT INTO updates(id, description, type, date, service) VALUES
+  (22, 'Released site', 'rel', '2023-01-15', 4),
+  (21, 'Added more planets!!', 'std', '2023-01-09', 4),
+  (20, 'Updated the readme and added documentation.', 'std', '2022-12-16', 4),
+  (19, 'Added further data to the raw page and improved the styling of graphs.', 'std', '2022-12-15', 4),
+  (18, 'Added per month graph to raw page', 'std', '2022-12-05', 4),
+  (17, 'Added raw page', 'std', '2022-11-21', 4),
   (16, 'Added contact information', 'std', '2022-10-28', 1),
   (15, 'now using HTTPS', 'std', '2022-10-03', 2),
   (14, 'Released site', 'rel', '2022-09-27', 3),
