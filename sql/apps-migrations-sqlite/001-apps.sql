@@ -27,4 +27,4 @@ INSERT INTO apps(name, Link, gitLink, lastUpdated, status) VALUES
   ('Old-Tyway', 'https://old.tyway.net', 'https://github.com/howlingunit/old-tyway', '2022-04-24', 1),
   ('Stefs massage', 'https://stefsmassage.co.uk', 'https://github.com/howlingunit/stefs-massage-website', '2022-09-27', 1),
   ('Tyway', 'https://tyway.net', 'https://github.com/howlingunit/tyway', '2022-10-28', 1),
-  ('Usernames', 'https://usernames.tyway.net', 'https://github.com/howlingunit/usernames', '2023-02-20', 2);
+  ('Usernames', 'https://usernames.tyway.net', 'https://github.com/howlingunit/usernames', '2023-02-20', 1);
