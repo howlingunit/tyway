@@ -24,6 +24,7 @@ INSERT INTO services(id, service, link) VALUES
   (3, 'STEFS-MASSAGE', 'https://stefsmassage.co.uk');
 
 INSERT INTO updates(description, type, date, service) VALUES
+  ('Released site preview', 'std', '2023-05-23', 6),
   ('Started project Feedback', 'sta', '2023-05-18', 6),
   ('Updated home page backgrounds', 'std', '2023-03-20', 1),
   ('Updated latest App', 'std', '2023-02-20', 1),
