@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { Comfortaa } from "next/font/google";
-import { ThemeProvider } from 'next-themes';
+import type { Metadata } from "next"
+import "./globals.css"
+import { Comfortaa } from "next/font/google"
+import { ThemeProvider } from 'next-themes'
 
 export const ComfortaaSans = Comfortaa({
   variable: "--font-comfortaa",
@@ -11,7 +11,7 @@ export const ComfortaaSans = Comfortaa({
 export const metadata: Metadata = {
   title: "Tyway",
   description: "TYWAY is a collection of applications made by Tyler Pitt. On the main site, you can view updates, a list of deployed apps and more about the creator.",
-};
+}
 
 export default function RootLayout({
   children,
@@ -26,5 +26,5 @@ export default function RootLayout({
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
