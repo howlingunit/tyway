@@ -3,7 +3,8 @@ import "./globals.css"
 import { Comfortaa } from "next/font/google"
 import { ThemeProvider } from 'next-themes'
 
-export const ComfortaaSans = Comfortaa({
+// eslint-disable-next-line
+const ComfortaaSans = Comfortaa({
   variable: "--font-comfortaa",
   subsets: ['latin']
 })

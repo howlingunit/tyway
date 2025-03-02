@@ -47,7 +47,7 @@ export default function Home() {
         <div className='w-full justify-start items-center flex flex-col dark:text-white py-5 gap-10'>
           <HomeNav />
 
-          <div className={` text-7xl flex flex-col text-center pt-10`}>
+          <div className={` md:text-7xl text-5xl flex flex-col text-center pt-10`}>
             <h1 className='tyway1'>TYWAY</h1>
             <h2 className='tyway2'>2.0</h2>
           </div>
