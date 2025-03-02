@@ -5,3 +5,49 @@
 :root {
   --font-comfortaa: 'Comfortaa', sans-serif;
 }
+
+
+.tyway1{
+  animation: goUp 3s;
+  animation-fill-mode: forwards;
+
+}
+
+.tyway2{
+  animation: goUp 3s;
+  animation-fill-mode: forwards;
+}
+
+.user-scroll{
+  animation: bounce 5s 2s, bounce 5s 2s infinite;
+}
+
+/* animations */
+
+@keyframes fadeIn {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+  
+}
+
+@keyframes goUp {
+  100%{
+      transform: translate(0, -2rem);
+  }
+}
+
+@keyframes bounce {
+  25%{
+      padding-bottom: 0;
+  }
+  50%{
+      padding-bottom: 1rem;
+  }
+  75%{
+      padding-bottom: 0;
+  }
+}
