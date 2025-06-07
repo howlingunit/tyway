@@ -2,6 +2,7 @@
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 import HomeNav from './comps/home_nav'
+import Link from 'next/link'
 
 
 
@@ -65,7 +66,7 @@ export default function Home() {
 
 
       <div className='w-screen h-screen'>
-        <iframe src="https://usernames.tyway.net" className='w-full h-full' ></iframe>
+        <Link href="https://usernames.tyway.net"><iframe src="https://usernames.tyway.net" className='w-full h-full' ></iframe></Link>
       </div>
     </div>
   )
