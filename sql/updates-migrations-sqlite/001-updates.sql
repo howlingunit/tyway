@@ -21,9 +21,11 @@ INSERT INTO services(id, service, link) VALUES
   (4, 'SWW', 'https://sww.tyway.net'),
   (5, 'USERNAMES', 'https://usernames.tyway.net'),
   (6, 'FEEDBACK', 'https://feedback.tyway.net'),
+  (7, 'PEPPER', 'https://pepper.tyway.net'),
   (3, 'STEFS-MASSAGE', 'https://stefsmassage.co.uk');
 
 INSERT INTO updates(description, type, date, service) VALUES
+  ('Added pepper portfolio site', 'rel', '2025-12-01', 7),
   ('Murded Feedback site', 'kil', '2025-02-16', 6),
   ('Released site preview', 'std', '2023-05-23', 6),
   ('Started project Feedback', 'sta', '2023-05-18', 6),
